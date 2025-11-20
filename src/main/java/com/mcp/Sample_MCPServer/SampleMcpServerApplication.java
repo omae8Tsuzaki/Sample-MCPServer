@@ -20,4 +20,11 @@ public class SampleMcpServerApplication {
                 .build();
     }
 
+    @Bean
+    public ToolCallbackProvider calculatorTools(CalculatorService calculatorService) {
+        return MethodToolCallbackProvider.builder()
+                .toolObjects(calculatorService)
+                .build();
+    }
+
 }

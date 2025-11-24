@@ -3,6 +3,7 @@
 - MCPサーバーの実装検証用のリポジトリ
 - Spring Boot AI を使用したMCPサーバー
 - 検証のため、外部につなぐAPIは利用しない
+- 通信方式は stdio なので、ローカルでのみ動作
 
 ## 実行方法
 
@@ -14,7 +15,7 @@
     ```
 
 2. Gradle プロジェクトの同期
-3. Task > buil > bootJar を実行
+3. Task > build > bootJar を実行
 4. 生成されたJarファイルのパスを取得し、MCP ホストに以下のように指定。
 
 ```json
